@@ -49,21 +49,18 @@
 </div>
 
 <script>
-    // Check if the URL contains ?lock=default
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('lock') && urlParams.get('lock') === 'default') {
-        document.body.style.background = "none";  // Remove background image
-        document.body.style.color = "black";  // Set text color to black for readability
-        document.body.innerHTML = "";  // Clear all content on the page
-        alert("Locked"); // Display locked message
+    // Get today's date
+    let today = new Date();
+
+    // Check if the current date is NOT February 22nd (locked by default)
+    if (today.getMonth() !== 1 || today.getDate() !== 22) {
+        // Display "locked" message
+        document.body.style.background = "none";  // Remove background
+        document.body.style.color = "black";  // Set text color to black
+        document.body.innerHTML = "<h1>The page is locked!</h1>";  // Display locked message
     } else {
-        // Check if the current date is February 22nd
-        let today = new Date();
-        if (today.getMonth() === 1 && today.getDate() === 22) { // February 22nd
-            document.getElementById('birthday-message').innerText = "Happy Birthday!";
-        } else {
-            document.getElementById('birthday-message').innerText = ""; // Clear birthday message if it's not the 22nd
-        }
+        // If it's February 22nd, display "Happy Birthday" message
+        document.getElementById('birthday-message').innerText = "Happy Birthday!";
     }
 </script>
 
