@@ -12,27 +12,30 @@
             background-attachment: fixed;
             text-align: center;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         .container {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            color: white;
         }
         .minecraft-button {
             background: url('https://i.imgur.com/1XHPyWc.png') no-repeat center center;
             background-size: contain;
-            width: 200px;
-            height: 50px;
+            width: 400px;  /* Increased size */
+            height: 100px;  /* Increased size */
             border: none;
             cursor: pointer;
             display: block;
             margin: auto;
-            font-size: 20px;
+            font-size: 30px;  /* Bigger text */
             color: white;
-            text-shadow: 2px 2px 2px black;
+            text-shadow: 2px 2px 4px black;
             font-weight: bold;
-            line-height: 50px;
+            line-height: 100px; /* Adjusted line height */
             text-decoration: none;
         }
         .minecraft-button:hover {
@@ -50,9 +53,9 @@
     function checkDate() {
         let today = new Date();
         if (today.getMonth() === 1 && today.getDate() === 22) { // February 22nd
-            window.location.href = "https://birthday.bentleyplayz.com/001"; // Replace with your hidden site URL
+            window.location.href = "https://birthday.bentleyplayz.com/0001"; // Hidden site URL
         } else {
-            alert("It's not time yet!");
+            console.log("It's not time yet!"); // No pop-up error, just logs in the console
         }
     }
 </script>
