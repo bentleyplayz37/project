@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're a Legend!</title>
+    <style>
+        body {
+            background-image: url('https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/d/9/a/d9a1f186e29d35026b1a5822fe63950cf59c426d.jpeg'); /* Minecraft dirt background */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1 {
+            font-size: 40px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .golden-cake {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Thanks, CommandCresp!</h1>
+    <p>For helping me mod my games and stuff – you're a legend!</p>
+    <img src="https://www.harrybatten.co.uk/cdn/shop/files/Minecraft.jpg?v=1713352088&width=550" 
+         alt="Minecraft Golden Cake" class="golden-cake">
+</div>
+
+</body>
+</html>
